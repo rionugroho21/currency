@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+*{
+	margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.wrap{
+    width: 920px;
+    height: auto;
+    margin: 30px auto 0px;
+    background-color: rgba(0, 34, 114, 0.85);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.wrap-input{
+    width: 100%;
+}
+.box{
+    float: left;
+    width: 28%;
+    padding: 0px 5px;
+}
+.label{
+    font-size: 14px;
+    color: #fff;
+    line-height: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+.input{
+    width: 100%;
+    height: 32px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #d7d7d7;
+    font-size: 14px;
+    color: #333;
+    line-height: 16px;
+}
+.btn-convert{
+    background: rgb(252, 184, 19);
+    padding: 9px 0px;
+    width: 15%;
+    margin-left: 5px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #000;
+}
+.btn-convert:hover{
+    cursor: pointer;
+}
+
+.resultConvert{
+    font-size: calc(72.2222px);
+    line-height: calc(72.2222px);
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
