@@ -90,6 +90,7 @@ html, body{
     width: 100%;
 }
 .box{
+    position: relative;
     float: left;
     width: 28%;
     padding: 0px 5px;
@@ -110,6 +111,7 @@ html, body{
     font-size: 14px;
     color: #333;
     line-height: 16px;
+    text-transform:uppercase;
 }
 .btn-convert{
     background: rgb(252, 184, 19);
@@ -135,4 +137,35 @@ html, body{
     display: block;
     text-align: center;
     margin-top: 15px;
+}
+
+.list-country{
+    display: none;
+    position: absolute;
+    top: 54px;
+    left: 5px;
+    width: 96%;
+    background-color: #fff;
+    padding-top: 5px;
+    margin-top: -5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+}
+.list-country li{
+    padding: 10px 8px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+    font-weight: bold;
+}
+.list-country li:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.list-country li:hover{
+    cursor: pointer;
+    background-color: #d7d7d7;
 }
