@@ -81,16 +81,16 @@ class App extends Component {
         <div className="wrap-input clearfix">
           <div className="box">
             <Label className="label" label={'Amount'}/>
-            <Input className="input" type="number" name={'inputAmount'} value={this.state.inputAmount} onChange={this.handleChange}/>
+            <Input className="input" type="number" placeholder={'10'} name={'inputAmount'} value={this.state.inputAmount} onChange={this.handleChange}/>
           </div>
           <div className="box">
             <Label className="label" label={'From'}/>
-            <Input className="input" type="text" name={'inputFrom'} value={this.state.inputFrom} onChange={this.handleChange} onClick={this.inputClick}/>
+            <Input className="input" type="text" placeholder={'USD'} name={'inputFrom'} value={this.state.inputFrom} onChange={this.handleChange} onClick={this.inputClick}/>
             {/* <List className="list-country" country={this.state.country} onClick={this.listClick1}/> */}
           </div>
           <div className="box">
             <Label className="label" label={'To'}/>
-            <Input className="input" type="text" name={'inputTo'} value={this.state.inputTo} onChange={this.handleChange} onClick={this.inputClick}/>
+            <Input className="input" type="text" placeholder={'IDR'} name={'inputTo'} value={this.state.inputTo} onChange={this.handleChange} onClick={this.inputClick}/>
             {/* <List className="list-country" country={this.state.country} onClick={this.listClick2}/> */}
           </div>
           <Button className="btn-convert" value={'Convert'} onClick = {this.handleClick}/>
