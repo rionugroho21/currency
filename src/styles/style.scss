@@ -136,13 +136,13 @@ html, body{
     color: #fff;
     display: block;
     text-align: center;
-    margin-top: 15px;
+    margin: 15px 0px 10px;
 }
 
 .list-country{
-    display: none;
+    // display: none;
     position: absolute;
-    top: 54px;
+    top: 58px;
     left: 5px;
     width: 96%;
     background-color: #fff;
@@ -168,4 +168,11 @@ html, body{
 .list-country li:hover{
     cursor: pointer;
     background-color: #d7d7d7;
+}
+
+.note{
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    margin-left: 5px;
 }
