@@ -178,22 +178,30 @@ html, body{
 }
 
 @media only screen and (max-width: 768px) {
+    #root{
+        padding: 0px 15px 0px;
+    }
     .wrap {
         width: 100%;
         height: auto;
         margin: 15px auto 0px;
+        padding: 20px 10px;
     }
     .box {
         width: 100%;
         padding: 0px 5px 15px;
     }
+    .box:last-child{
+        padding-bottom: 20px;
+    }
     .btn-convert {
         width: 97%;
-        margin: 5px auto 0px;
+        margin: 0px auto;
         display: block;
     }
     .resultConvert {
         font-size: 28px;
         line-height: 30px;
+        margin: 20px 0px 15px;
     }
 }
