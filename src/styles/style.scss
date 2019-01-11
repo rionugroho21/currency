@@ -176,3 +176,24 @@ html, body{
     color: #fff;
     margin-left: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+    .wrap {
+        width: 100%;
+        height: auto;
+        margin: 15px auto 0px;
+    }
+    .box {
+        width: 100%;
+        padding: 0px 5px 15px;
+    }
+    .btn-convert {
+        width: 97%;
+        margin: 5px auto 0px;
+        display: block;
+    }
+    .resultConvert {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
