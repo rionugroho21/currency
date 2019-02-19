@@ -170,6 +170,19 @@ html, body{
     background-color: #d7d7d7;
 }
 
+.option-country{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 5px;
+    padding: 7px 8px;
+    margin-top: 0px;
+    border-radius: 5px;
+    z-index: 1;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+}
+
 .note{
     font-size: 12px;
     line-height: 16px;

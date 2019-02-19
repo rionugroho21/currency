@@ -3,6 +3,7 @@ import Label from './component/Label';
 import Input from './component/Input';
 import Button from './component/Button';
 import List from './component/List';
+import Option from './component/Option';
 import axios from 'axios';
 
 class App extends Component {
@@ -46,6 +47,7 @@ class App extends Component {
     const inputAmount = Number(this.state.inputAmount);
     const inputFrom = this.state.inputFrom.toUpperCase();
     const inputTo = this.state.inputTo.toUpperCase();
+    console.log(inputFrom + " - " + inputTo);
     this.startConvert(inputAmount, inputFrom, inputTo);
   }
 
@@ -85,15 +87,20 @@ class App extends Component {
           </div>
           <div className="box">
             <Label className="label" label={'From'}/>
-            <Input className="input" type="text" placeholder={'USD'} name={'inputFrom'} value={this.state.inputFrom} onChange={this.handleChange} onClick={this.inputClick}/>
-            {/* <List className="list-country" country={this.state.country} onClick={this.listClick1}/> */}
+            {/* <Input className="input" type="text" placeholder={'USD'} name={'inputFrom'} value={this.state.inputFrom} onChange={this.handleChange} onClick={this.inputClick}/>
+            <List className="list-country" country={this.state.country} onClick={this.listClick1}/> */}
+            <input className="input" type="text" list="" list="country" name="country" placeholder={'USD'} name={'inputFrom'} value={this.state.inputFrom} onChange={this.handleChange} />
+            <datalist id="country">
+              {this.state.country.map((index) =>
+                <option value={index} />
+              )}
+            </datalist>
           </div>
           <div className="box">
             <Label className="label" label={'To'}/>
-            <Input className="input" type="text" placeholder={'IDR'} name={'inputTo'} value={this.state.inputTo} onChange={this.handleChange} onClick={this.inputClick}/>
-            {/* <List className="list-country" country={this.state.country} onClick={this.listClick2}/> */}
+            <Option className="option-country" name="inputTo" value={this.state.inputTo} country={this.state.country} onChange={this.handleChange} />
           </div>
-          <Button className="btn-convert" value={'Convert'} onClick = {this.handleClick}/>
+          <Button className="btn-convert" value={'Convert'} onClick={this.handleClick}/>
         </div>
         <div className="">
           <h1 className="resultConvert" name="resultConvert">{this.state.resultConvert}</h1>
