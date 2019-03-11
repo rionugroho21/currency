@@ -7,7 +7,7 @@ import * as actions from './redux/actions';
 const mapStateToProps = (state) => {
   return {
     datas: state.datas,
-    datas2: state.resultConvert
+    money: state.resultConvert
   };
 };
 

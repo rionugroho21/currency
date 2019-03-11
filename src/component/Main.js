@@ -25,7 +25,7 @@ class Main extends Component {
         });
     }
     componentWillReceiveProps(nextProps) {
-        this.setState({result: nextProps.datas2})
+        this.setState({result: nextProps.money})
     }
     
     handleClick() {
@@ -68,7 +68,7 @@ class Main extends Component {
 }
 
 const mapsStateToProps = (state) => ({
-    datas2: state.datas2
+    datas2: state.money
 });
 
 export default connect(mapsStateToProps)(Main);

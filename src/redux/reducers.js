@@ -8,13 +8,13 @@ function datas(state = _datas, action) {
     }
 }
 
-function datas2(state = _datas, action) {
+function money(state = _datas, action) {
     switch (action.type) {
         case 'LOAD_MONEY': return action.resultConvert;
         default: return state;
     }
 }
 
-const rootReducer = combineReducers({datas, datas2});
+const rootReducer = combineReducers({datas, money});
 
 export default rootReducer;
